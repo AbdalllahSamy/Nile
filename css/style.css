@@ -1,0 +1,481 @@
+:root {
+	--color-primary: #0A2647;
+	--color-second: #205295;
+	--color-third: #2C74B3;
+	--color-fourth: #A5D7E8;
+	--color-buttons: #576CBC;
+    --color-buttons-hover: #0A2647;
+    --color-white: #ffffff;
+    --col-space: 10px;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection{
+    background-color: var(--color-buttons);
+    color: white;
+}
+
+body {
+	font-size: 16px;
+	box-sizing: border-box;
+	min-height: 100vh;
+	line-height: 1.7;
+	scroll-behavior: smooth; /* Does NOT work on Safari */
+    /* perspective: 1000; */
+}
+.body-student{
+    background-color: #144272;
+    padding: 15px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ul,
+ol {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a[class] {
+	text-decoration: none;
+}
+
+button {
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 calc(-1 * var(--col-space));
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-15 {
+	width: 15%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-20 {
+	width: 20%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-30 {
+	width: 30%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-33 {
+	width: 33.333%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-25 {
+	width: 25%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-50 {
+	width: 50%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-70 {
+	width: 70%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-75 {
+	width: 75%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-80 {
+	width: 80%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.w-85 {
+	width: 85%;
+	padding: 0 var(--col-space);
+	margin-top: calc(2 * var(--col-space));
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.bg-image {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* -------------------------------- animation ------------------------------- */
+
+@keyframes glow {
+    from{
+        box-shadow: 0 0 10px rgb(255, 255, 255,0.6);
+    }to{
+        box-shadow: 0 0 100px rgb(255, 255, 255,0.1);
+    }
+}
+
+/* ------------------------------ end animation ----------------------------- */
+
+/* ------------------------------- start aside ------------------------------ */
+
+.aside-student{
+    position: fixed;
+    top: 0;
+    left: 9px;
+    bottom: 0;
+    padding: 0 0;
+}
+
+.logo{
+    padding: 10px 10px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.aside-logo{
+    width: 40%;
+    height: 100px;
+    color: var(--color-white);
+}
+.logo-text{
+    color: var(--color-white);
+    line-height: 1.2;
+    font-size: 30px;
+}
+
+.aside-list__link{
+    color: var(--color-white);
+    padding: 12px 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.aside-list__element{
+    margin: 10px 0;
+}
+.aside-list__element.active .aside-list__link{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.aside-list__element.active{
+    position: relative;
+}
+
+.aside-list__element:hover .aside-list__link{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.aside-list__element.active:hover .aside-list__link{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.aside-icon{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+/* -------------------------------- end aside ------------------------------- */
+
+/* -------------------------------- home main ------------------------------- */
+
+.main-student{
+    background-color: var(--color-primary);
+    min-height: 90vh;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 20px 0;
+}
+
+.main-controller{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controller-list{
+    background-color: var(--color-second);
+    border-radius: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.controller-list__link{
+    margin: 0;
+    transition: 0.5s;
+    color: white;
+    padding: 3px 0;
+}
+.controller-list__link:first-child{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.controller-list__link:last-child{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.controller-list__link:hover{
+    background-color: #144272;
+    color: var(--color-white);
+}
+
+.main-controller__icon{
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--color-third);
+}
+.main-controller__icon:hover{
+    color: var(--color-fourth);
+}
+
+.sections{
+    margin-top: 80px;
+}
+
+.section-text{
+    color: var(--color-fourth);
+}
+
+.section-title{
+    color: #ccc;
+    margin-bottom: 2px;
+}
+
+.card{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out; 
+    /* box-shadow: 0 0 10px rgb(255, 255, 255,0.5); */
+    border-radius: 10px;
+    animation: glow 2.5s  infinite;
+    animation-direction: alternate;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #144272;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.card-front{
+    /* z-index: 1; */
+    backface-visibility: hidden;
+}
+
+.card-back{
+    /* z-index: 1; */
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.front-background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-01{
+    background-image: url(../images/people/1.jpg);
+}
+.img-02{
+    background-image: url(../images/people/2.jpg);
+}
+.img-03{
+    background-image: url(../images/people/3.jpg);
+}
+.img-04{
+    background-image: url(../images/people/4.jpg);
+}
+
+.front-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(transparent,#144272);
+    height: 70%;
+    padding: 0 15px;
+}
+.front-content__txt{
+    position: absolute;
+    bottom: 20px;
+}
+
+.back-details{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+
+.back-cover{
+    position: relative;
+    background-color: var(--color-third);
+    height: 20%;
+    margin-bottom: 50px;
+}
+
+.back-profile{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+}
+
+.back-content{
+    padding: 0 15px;
+}
+
+.back-content__list{
+    list-style: circle;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    margin-left: 14px;
+}
+
+.back-content__button{
+    background-color: var(--color-buttons);
+    color: var(--color-white);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.back-content__button:hover{
+    background-color: var(--color-buttons-hover);
+}
+
+.sections .line{
+    width: 10%;
+    height: 6px;
+    background-color: var(--color-fourth);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.course-card{
+    background-color: tomato;
+    height: 250px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.275);
+    line-height: 1.2;
+}
+
+.add-course{
+    height: 250px;
+    color: white;
+    flex-direction: row;
+}
+.add-course .plus{
+    font-size: 100px;
+}
+
+.teacher-photo{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.teacher-name{
+    color: white;
+    font-size: 30px;
+    margin-top: 2px;
+}
+
+.teacher-details{
+    color: white;
+}
+
+/* ------------------------------ end home main ----------------------------- */

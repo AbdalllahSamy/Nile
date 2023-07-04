@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="text-capitalize">tokyo academy</title>
+
+    <!-- ----------------------------- googleFont ------------------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- ------------------------------ fontIcon ------------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ------------------------------- myStyle ------------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-student">
+    <header class="main-body">
+        <aside class="w-20 aside-student">
+            <div class="logo">
+                <i class="fa-brands fa-slack aside-logo"></i>
+                <h1 class="logo-text text-capitalize">tokyo <br>academy</h1>
+            </div>
+            <ul class="aside-list">
+                <li class="aside-list__element active"><a href="#" class="aside-list__link text-capitalize w-100 d-block"><i class="fa-solid fa-house aside-icon"></i>home</a></li>
+                <li class="aside-list__element"><a href="#" class="aside-list__link text-capitalize w-100 d-block"><i class="fa-brands fa-leanpub aside-icon"></i>subjects</a></li>
+                <li class="aside-list__element"><a href="#" class="aside-list__link text-capitalize w-100 d-block"><i class="fa-solid fa-person-chalkboard aside-icon"></i>teachers</a></li>
+                <li class="aside-list__element"><a href="#" class="aside-list__link text-capitalize w-100 d-block"><i class="fa-solid fa-laptop-file aside-icon"></i>my courses</a></li>
+            </ul>
+        </aside>
+        <main class="w-80 main-student">
+            <div class="container">
+                <header class="main-controller d-flex">
+                    <div class="controller-list w-85 d-flex">
+                        <a href="#" class="w-25 text-capitalize d-block controller-list__link">first</a>
+                        <a href="#" class="w-25 text-capitalize d-block controller-list__link">sec</a>
+                        <a href="#" class="w-25 text-capitalize d-block controller-list__link">third</a>
+                        <a href="#" class="w-25 text-capitalize d-block controller-list__link">fourth</a>
+                    </div>
+                    <i class="fa-solid fa-user main-controller__icon"></i>
+                    <i class="fa-solid fa-right-from-bracket main-controller__icon"></i>
+                </header>
+            </div>
+            <section class="sections">
+                <div class="container">
+                    <h2 class="section-text text-capitalize">advertisements</h2>
+                    <hr class="line">
+                    <p class="text-capitalize section-title">Some advertisements for teachers</p>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video src="images/vedios/rr.mp4" autoplay loop muted class="d-block w-100"></video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="images/vedios/rr.mp4" autoplay loop muted class="d-block w-100"></video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="images/vedios/rr.mp4" autoplay loop muted class="d-block w-100"></video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <div class="container">
+                <section class="sections">
+                    <h2 class="section-text text-capitalize">top teachers</h2>
+                    <hr class="line">
+                    <p class="text-capitalize section-title">hover in the card to know more information</p>
+                    <div class="section-cards row">
+                        <div class="w-25">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="front-background img-01 bg-image">
+                                        <div class="front-content">
+                                            <div class="front-content__txt">
+                                                <h2 class="front-content__name text-capitalize">name</h2>
+                                                <p class="front-content__title text-capitalize">title about him</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="back-details">
+                                        <div class="back-cover">
+                                            <div class="back-profile bg-image img-01"></div>
+                                        </div>
+                                        <div class="back-content">
+                                            <h2 class="text-capitalize">name</h2>
+                                            <ul class="back-content__list">
+                                                <li>3<sup>Th</sup></li>
+                                                <li>2<sup>Th</sup></li>
+                                                <li>1<sup>Th</sup></li>
+                                            </ul>
+                                            <button class="back-content__button">more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-25">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="front-background img-02 bg-image">
+                                        <div class="front-content">
+                                            <div class="front-content__txt">
+                                                <h2 class="front-content__name text-capitalize">name</h2>
+                                                <p class="front-content__title text-capitalize">title about him</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="back-details">
+                                        <div class="back-cover">
+                                            <div class="back-profile bg-image img-01"></div>
+                                        </div>
+                                        <div class="back-content">
+                                            <h2 class="text-capitalize">name</h2>
+                                            <ul class="back-content__list">
+                                                <li>3<sup>Th</sup></li>
+                                                <li>2<sup>Th</sup></li>
+                                                <li>1<sup>Th</sup></li>
+                                            </ul>
+                                            <button class="back-content__button">more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-25">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="front-background img-03 bg-image">
+                                        <div class="front-content">
+                                            <div class="front-content__txt">
+                                                <h2 class="front-content__name text-capitalize">name</h2>
+                                                <p class="front-content__title text-capitalize">title about him</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="back-details">
+                                        <div class="back-cover">
+                                            <div class="back-profile bg-image img-01"></div>
+                                        </div>
+                                        <div class="back-content">
+                                            <h2 class="text-capitalize">name</h2>
+                                            <ul class="back-content__list">
+                                                <li>3<sup>Th</sup></li>
+                                                <li>2<sup>Th</sup></li>
+                                                <li>1<sup>Th</sup></li>
+                                            </ul>
+                                            <button class="back-content__button">more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-25">
+                            <div class="card">
+                                <span class="ss"></span>
+                                <div class="card-front">
+                                    <div class="front-background img-04 bg-image">
+                                        <div class="front-content">
+                                            <div class="front-content__txt">
+                                                <h2 class="front-content__name text-capitalize">name</h2>
+                                                <p class="front-content__title text-capitalize">title about him</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="back-details">
+                                        <div class="back-cover">
+                                            <div class="back-profile bg-image img-01"></div>
+                                        </div>
+                                        <div class="back-content">
+                                            <h2 class="text-capitalize">name</h2>
+                                            <ul class="back-content__list">
+                                                <li>3<sup>Th</sup></li>
+                                                <li>2<sup>Th</sup></li>
+                                                <li>1<sup>Th</sup></li>
+                                            </ul>
+                                            <button class="back-content__button">more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sections">
+                    <h2 class="section-text text-capitalize">my courses</h2>
+                    <hr class="line">
+                    <p class="text-capitalize section-title">These are the courses you are currently enrolled in</p>
+                    <div class="section-courses row">
+                        <div class="w-25">
+                            <div class="course-card add-course">
+                                <h3 class="plus">+</h3>
+                            </div>
+                        </div>
+                        <div class="w-25">
+                            <div class="course-card">
+                                <img src="images/people/2.jpg" class="teacher-photo" alt="">
+                                <h3 class="text-capitalize teacher-name">Name</h3>
+                                <p class="teacher-details">Lorem ipsum dolor sit amet cons adipisicing elit. Dolor</p>
+                            </div>
+                        </div>
+                        <div class="w-25">
+                            <div class="course-card">
+                                <img src="images/people/2.jpg" class="teacher-photo" alt="">
+                                <h3 class="text-capitalize teacher-name">Name</h3>
+                                <p class="teacher-details">Lorem ipsum dolor sit amet cons adipisicing elit. Dolor</p>
+                            </div>
+                        </div>
+                        <div class="w-25">
+                            <div class="course-card">
+                                <img src="images/people/2.jpg" class="teacher-photo" alt="">
+                                <h3 class="text-capitalize teacher-name">Name</h3>
+                                <p class="teacher-details">Lorem ipsum dolor sit amet cons adipisicing elit. Dolor</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main> 
+    </header>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vfNL6Nd6iRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
